@@ -8,17 +8,15 @@
 
 import Foundation
 
+// Your actions here
+// PRESENTER -> INTERACTOR
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-    // FIXME: Add your actions here
-    // PRESENTER -> INTERACTOR
-    //
     // func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request.Work)
 }
 
+// Your presentation logic
+// INTERACTOR -> PRESENTER (indirect)
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput: class {
-    // FIXME: Add your presentation logic
-    // INTERACTOR -> PRESENTER (indirect)
-    //
     // func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Response.Work)
 }
 
@@ -28,13 +26,13 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor {
 
 // MARK: - Business Logic -
 
+// Implement your actions here, as per protocol above
+// PRESENTER -> INTERACTOR
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-    // FIXME: Implement your actions here, as per protocol above
-    // PRESENTER -> INTERACTOR
-    //
+
     // func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request.Work) {
-        // NOTE: Pass the result to the Presenter
-        // let response = ___FILEBASENAMEASIDENTIFIER___.Response.Work()
-        // output?.presentSomething(response: response)
+    //    NOTE: Pass the result to the Presenter
+    //    let response = ___FILEBASENAMEASIDENTIFIER___.Response.Work()
+    //    output?.presentSomething(response: response)
     // }
 }

@@ -34,7 +34,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     // MARK: - Callbacks -
 
-    // FIXME: Implement your callbacks here and propagate them to presenter
+    // Implement your callbacks here and propagate them to presenter.
     //
     // @IBAction func buttonPressed(sender: UIButton) {
     //    presenter.buttonPressed()
@@ -43,10 +43,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 // MARK: - Display Logic -
 
+// Implement display logic as per ___FILEBASENAMEASIDENTIFIER___PresenterOutput protocol.
+// PRESENTER -> VIEW
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-    // FIXME: Implement display logic as per presenter output protocol
-    // PRESENTER -> VIEW
-    //
     // func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.ViewModel.Work) {
     //     NOTE: Display the result from the Presenter
     //     nameTextField.text = viewModel.name

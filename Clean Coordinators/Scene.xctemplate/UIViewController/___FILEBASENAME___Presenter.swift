@@ -8,15 +8,15 @@
 
 import Foundation
 
+// Callbacks from your view
+// VIEW -> PRESENTER
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput {
-    // FIXME: Insert callbacks from your interactor
-    // VIEW -> PRESENTER
     func viewCreated()
 }
 
+// Your display logic
+// PRESENTER -> VIEW
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
-    // FIXME: Add you display logic
-    // PRESENTER -> VIEW
     // func display(user: ___FILEBASENAMEASIDENTIFIER___.DisplayData.Work)
 }
 
@@ -35,16 +35,15 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter {
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput {
     func viewCreated() {
-        // Do something if necessary, fx fetch data
+        // Do something if necessary, for example fetch data.
     }
 }
 
 // MARK: - Presentation Logic -
 
+// Implement your actions here, as per ___FILEBASENAMEASIDENTIFIER___InteractorOutput protocol.
+// INTERACTOR -> PRESENTER (indirect)
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-    // FIXME: Implement your actions here, as per protocol above
-    // INTERACTOR -> PRESENTER (indirect)
-    //
     // func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___Response) {
     //      // NOTE: Format the response from the Interactor and pass the result back to the View Controller
     //
