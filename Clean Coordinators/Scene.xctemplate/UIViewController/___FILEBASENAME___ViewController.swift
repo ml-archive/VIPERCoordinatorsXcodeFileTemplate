@@ -12,13 +12,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     let presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput
 
-    // MARK: - View Lifecycle -
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter.viewCreated()
-    }
-
     convenience init(presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput) {
         self.init(presenter: presenter, nibName: nil, bundle: nil)
     }
@@ -30,6 +23,13 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - View Lifecycle -
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter.viewCreated()
     }
 
     // MARK: - Callbacks -
