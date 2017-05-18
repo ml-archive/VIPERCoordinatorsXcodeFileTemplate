@@ -9,22 +9,10 @@
 import Foundation
 import UIKit
 
-// Uncomment if you need callbacks to previous coordinator
-//
-// protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate {
-//     func coordinator(_ coordinator: Coordinator, finishedWithSuccess success: Bool)
-// }
-
-// Callbacks from your presenter
-// PRESENTER -> COORDINATOR
-protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorInput {
-
-}
-
 class ___FILEBASENAMEASIDENTIFIER___Coordinator: Coordinator {
     let navigationController: UINavigationController
     var children: [Coordinator] = []
-    //  var delegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate
+//    weak var delegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -32,8 +20,7 @@ class ___FILEBASENAMEASIDENTIFIER___Coordinator: Coordinator {
 
     func start() {
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor,
-                                                                coordinator: self)
+        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor, coordinator: self)
         let vc = ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: presenter)
 
         interactor.output = presenter
@@ -44,7 +31,6 @@ class ___FILEBASENAMEASIDENTIFIER___Coordinator: Coordinator {
     }
 }
 
-// Implement your callbacks here, after defining them in the protocol
 // PRESENTER -> COORDINATOR
 extension ___FILEBASENAMEASIDENTIFIER___Coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorInput {
 

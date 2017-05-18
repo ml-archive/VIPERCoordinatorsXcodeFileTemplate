@@ -11,20 +11,17 @@ import Foundation
 enum ___FILEBASENAMEASIDENTIFIER___ {
     enum Request { }
     enum Response { }
-    enum ViewModel { }
+    enum DisplayData { }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___.Request {
-    // Your requests here. For example:
-    // struct Work { }
+
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___.Response {
-    // Your response here. For example:
-    // struct Work { }
+
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___.ViewModel {
-    // Your view models here. For example:
-    // struct Work { }
+extension ___FILEBASENAMEASIDENTIFIER___.DisplayData {
+    
 }

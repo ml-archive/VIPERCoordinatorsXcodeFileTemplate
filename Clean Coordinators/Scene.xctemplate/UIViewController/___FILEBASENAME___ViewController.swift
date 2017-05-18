@@ -34,20 +34,11 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     // MARK: - Callbacks -
 
-    // Implement your callbacks here and propagate them to presenter.
-    //
-    // @IBAction func buttonPressed(sender: UIButton) {
-    //    presenter.buttonPressed()
-    // }
 }
 
 // MARK: - Display Logic -
 
-// Implement display logic as per ___FILEBASENAMEASIDENTIFIER___PresenterOutput protocol.
 // PRESENTER -> VIEW
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-    // func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.ViewModel.Work) {
-    //     NOTE: Display the result from the Presenter
-    //     nameTextField.text = viewModel.name
-    // }
+
 }
