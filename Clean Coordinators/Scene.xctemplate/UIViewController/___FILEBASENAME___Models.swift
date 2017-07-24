@@ -8,20 +8,20 @@
 
 import Foundation
 
-enum ___FILEBASENAMEASIDENTIFIER___ {
+enum ___VARIABLE_sceneName___ {
     enum Request { }
     enum Response { }
     enum DisplayData { }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___.Request {
+extension ___VARIABLE_sceneName___.Request {
 
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___.Response {
+extension ___VARIABLE_sceneName___.Response {
 
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___.DisplayData {
+extension ___VARIABLE_sceneName___.DisplayData {
     
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput?
+class ___VARIABLE_sceneName___Interactor {
+    weak var output: ___VARIABLE_sceneName___InteractorOutput?
 }
 
 // MARK: - Business Logic -
 
 // PRESENTER -> INTERACTOR
-extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
+extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorInput {
 }

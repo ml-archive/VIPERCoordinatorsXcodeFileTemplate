@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+class ___VARIABLE_sceneName___ViewController: UIViewController {
 
-    let presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput
+    let presenter: ___VARIABLE_sceneName___PresenterInput
 
-    convenience init(presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput) {
+    convenience init(presenter: ___VARIABLE_sceneName___PresenterInput) {
         self.init(presenter: presenter, nibName: nil, bundle: nil)
     }
 
-    init(presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput, nibName: String?, bundle: Bundle?) {
+    init(presenter: ___VARIABLE_sceneName___PresenterInput, nibName: String?, bundle: Bundle?) {
         self.presenter = presenter
         super.init(nibName: nibName, bundle: bundle)
     }
@@ -39,6 +39,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 // MARK: - Display Logic -
 
 // PRESENTER -> VIEW
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
+extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___PresenterOutput {
 
 }

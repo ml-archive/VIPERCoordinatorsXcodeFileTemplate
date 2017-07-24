@@ -3,25 +3,25 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved. TEST
 //
 
 import Foundation
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Coordinator: Coordinator {
+class ___VARIABLE_sceneName___Coordinator: Coordinator {
     let navigationController: UINavigationController
     var children: [Coordinator] = []
-//    weak var delegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
+//    weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     func start() {
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor, coordinator: self)
-        let vc = ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: presenter)
+        let interactor = ___VARIABLE_sceneName___Interactor()
+        let presenter = ___VARIABLE_sceneName___Presenter(interactor: interactor, coordinator: self)
+        let vc = ___VARIABLE_sceneName___ViewController(presenter: presenter)
 
         interactor.output = presenter
         presenter.output = vc
@@ -32,6 +32,6 @@ class ___FILEBASENAMEASIDENTIFIER___Coordinator: Coordinator {
 }
 
 // PRESENTER -> COORDINATOR
-extension ___FILEBASENAMEASIDENTIFIER___Coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorInput {
+extension ___VARIABLE_sceneName___Coordinator: ___VARIABLE_sceneName___CoordinatorInput {
 
 }

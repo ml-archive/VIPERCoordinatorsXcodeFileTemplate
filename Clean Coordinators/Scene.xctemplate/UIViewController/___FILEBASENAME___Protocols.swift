@@ -11,35 +11,35 @@ import UIKit
 
 // ======== Coordinator ======== //
 
-//protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: class {
+//protocol ___VARIABLE_sceneName___CoordinatorDelegate: class {
 //    func coordinator(_ coordinator: Coordinator, finishedWithSuccess success: Bool)
 //}
 
 // PRESENTER -> COORDINATOR
-protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorInput {
+protocol ___VARIABLE_sceneName___CoordinatorInput {
 
 }
 
 // ======== Interactor ======== //
 
 // PRESENTER -> INTERACTOR
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-    // func perform(_ request: ___FILEBASENAMEASIDENTIFIER___.Request.Work)
+protocol ___VARIABLE_sceneName___InteractorInput {
+    // func perform(_ request: ___VARIABLE_sceneName___.Request.Work)
 }
 
 // INTERACTOR -> PRESENTER (indirect)
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput: class {
-    // func present(_ response: ___FILEBASENAMEASIDENTIFIER___.Response.Work)
+protocol ___VARIABLE_sceneName___InteractorOutput: class {
+    // func present(_ response: ___VARIABLE_sceneName___.Response.Work)
 }
 
 // ======== Presenter ======== //
 
 // VIEW -> PRESENTER
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput {
+protocol ___VARIABLE_sceneName___PresenterInput {
     func viewCreated()
 }
 
 // PRESENTER -> VIEW
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
-    // func display(_ displayModel: ___FILEBASENAMEASIDENTIFIER___.DisplayData.Work)
+protocol ___VARIABLE_sceneName___PresenterOutput: class {
+    // func display(_ displayModel: ___VARIABLE_sceneName___.DisplayData.Work)
 }
