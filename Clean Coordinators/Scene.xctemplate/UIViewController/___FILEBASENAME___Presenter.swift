@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter {
-    let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput
-    let coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorInput
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput?
+class ___VARIABLE_sceneName___Presenter {
+    let interactor: ___VARIABLE_sceneName___InteractorInput
+    let coordinator: ___VARIABLE_sceneName___CoordinatorInput
+    weak var output: ___VARIABLE_sceneName___PresenterOutput?
 
-    init(interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput, coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorInput) {
+    init(interactor: ___VARIABLE_sceneName___InteractorInput, coordinator: ___VARIABLE_sceneName___CoordinatorInput) {
         self.interactor = interactor
         self.coordinator = coordinator
     }
@@ -21,7 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter {
 
 // MARK: - User Events -
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput {
+extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput {
     func viewCreated() {
 
     }
@@ -30,6 +30,6 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 // MARK: - Presentation Logic -
 
 // INTERACTOR -> PRESENTER (indirect)
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
+extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InteractorOutput {
 
 }
