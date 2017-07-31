@@ -10,7 +10,7 @@ import Foundation
 
 class ___VARIABLE_sceneName___Presenter {
     let interactor: ___VARIABLE_sceneName___InteractorInput
-    let coordinator: ___VARIABLE_sceneName___CoordinatorInput
+    weak var coordinator: ___VARIABLE_sceneName___CoordinatorInput?
     weak var output: ___VARIABLE_sceneName___PresenterOutput?
 
     init(interactor: ___VARIABLE_sceneName___InteractorInput, coordinator: ___VARIABLE_sceneName___CoordinatorInput) {

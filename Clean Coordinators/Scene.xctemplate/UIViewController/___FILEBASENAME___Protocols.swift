@@ -16,7 +16,7 @@ import UIKit
 //}
 
 // PRESENTER -> COORDINATOR
-protocol ___VARIABLE_sceneName___CoordinatorInput {
+protocol ___VARIABLE_sceneName___CoordinatorInput: class {
 
 }
 
