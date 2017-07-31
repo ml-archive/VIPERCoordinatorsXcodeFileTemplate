@@ -21,7 +21,7 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
     func start() {
         let interactor = ___VARIABLE_sceneName___Interactor()
         let presenter = ___VARIABLE_sceneName___Presenter(interactor: interactor, coordinator: self)
-        let vc = ___VARIABLE_sceneName___ViewController(presenter: presenter)
+        let vc = ___VARIABLE_sceneName___ViewController.instantiate(with: presenter)
 
         interactor.output = presenter
         presenter.output = vc

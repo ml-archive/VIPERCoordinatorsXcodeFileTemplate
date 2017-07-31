@@ -3,6 +3,7 @@
 BASE_XCODE_DIR="${HOME}/Library/Developer/Xcode"
 TEMPLATES_XCODE_DIR="${BASE_XCODE_DIR}/Templates"
 FILE_TEMPLATES_XCODE_DIR="${TEMPLATES_XCODE_DIR}/File Templates"
+TEMPLATES_FOLDER_NAME="Clean Coordinators"
 
 echo "Starting installation of Clean Coordinators templates."
 
@@ -18,7 +19,13 @@ if [ ! -d "${FILE_TEMPLATES_XCODE_DIR}" ]; then
   mkdir "${FILE_TEMPLATES_XCODE_DIR}"
 fi
 
+# Check if templates exist
+if [ -d "${FILE_TEMPLATES_XCODE_DIR}/${TEMPLATES_FOLDER_NAME}" ]; then
+  echo "Deleting previous ${TEMPLATES_FOLDER_NAME} directory."
+  rm -rf "${FILE_TEMPLATES_XCODE_DIR}/${TEMPLATES_FOLDER_NAME}"
+fi
+
 # Copy the files
 echo "Copying template files."
-cp -r "Clean Coordinators" "${FILE_TEMPLATES_XCODE_DIR}/"
+cp -r "${TEMPLATES_FOLDER_NAME}" "${FILE_TEMPLATES_XCODE_DIR}/"
 echo "Clean Coordinators templates installation done."
