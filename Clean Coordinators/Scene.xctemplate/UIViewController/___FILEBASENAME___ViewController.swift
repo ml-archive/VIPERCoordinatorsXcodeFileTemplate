@@ -10,19 +10,14 @@ import UIKit
 
 class ___VARIABLE_sceneName___ViewController: UIViewController {
 
-    let presenter: ___VARIABLE_sceneName___PresenterInput
+    private var presenter: ___VARIABLE_sceneName___PresenterInput!
 
-    convenience init(presenter: ___VARIABLE_sceneName___PresenterInput) {
-        self.init(presenter: presenter, nibName: nil, bundle: nil)
-    }
-
-    init(presenter: ___VARIABLE_sceneName___PresenterInput, nibName: String?, bundle: Bundle?) {
-        self.presenter = presenter
-        super.init(nibName: nibName, bundle: bundle)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    class func instantiate(with presenter: ___VARIABLE_sceneName___PresenterInput) -> ___VARIABLE_sceneName___ViewController {
+        let name = "\(___VARIABLE_sceneName___ViewController.self)"
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: name) as! ___VARIABLE_sceneName___ViewController
+        vc.presenter = presenter
+        return vc
     }
 
     // MARK: - View Lifecycle -
