@@ -20,6 +20,36 @@ chmod 755 install.sh && ./install.sh
 2. Create a new file (`Cmd + N`)
 3. Notice Clean Coordinators in the left pane
 
+## Known Issues
+
+Various current and previous issues and how to fix them.
+
+#### Coordinator Leak
+In all versions up to version 1.5.0 (not including) there was a memory leak due to a retain cycle between the presenter and the coordinator.
+
+This is the entire retain cycle:  
+`Coordinator` **>** `Navigation Controller` **>** `View Controller` **>** `Presenter` **>** `Coordinator`
+
+The steps to fix this are as follows:
+
+1. Make the `YourCoordinatorInput` protocol a class protocol by appending `: class` to its declaration
+2. Change the coordinator reference in the presetner (the property) to be a weak reference, ie. `weak var coordinator: YourCoordinatorInput?`
+3. Update all code in presenter referencing coordinator with `?` to fix issues with the property now being optional
+
+To do all steps faster and automatically you can use Xcode's search and replace with regular expressions as follows:
+
+**Step 1**  
+Search field: `protocol ([\w]*)CoordinatorInput \{`  
+Replace field: `protocol $1CoordinatorInput: class \{`
+ 
+**Step 2**  
+Search field: `let coordinator: ([\w]*)CoordinatorInput`  
+Replace field: `weak var coordinator: $1CoordinatorInput?`
+
+**Step 3** (experimental, might need tweaks)  
+Search field: `([\n]+[\s]*coordinator)\.(?!start)`  
+Replace field: `$1?\.`
+
 ## 👥 Credits
 Made with ❤️ at [Nodes](http://nodesagency.com).
 
