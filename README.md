@@ -30,6 +30,8 @@ In all versions up to version 1.5.0 (not including) there was a memory leak due 
 This is the entire retain cycle:  
 `Coordinator` **>** `Navigation Controller` **>** `View Controller` **>** `Presenter` **>** `Coordinator`
 
+![](http://i.imgur.com/FqvGKYl.png)
+
 The steps to fix this are as follows:
 
 1. Make the `YourCoordinatorInput` protocol a class protocol by appending `: class` to its declaration
