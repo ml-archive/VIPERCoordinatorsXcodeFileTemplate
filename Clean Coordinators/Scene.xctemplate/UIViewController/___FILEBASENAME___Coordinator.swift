@@ -11,6 +11,8 @@ import UIKit
 
 class ___VARIABLE_sceneName___Coordinator: Coordinator {
     let navigationController: UINavigationController
+    // NOTE: This array is used to retain child coordinators. Don't forget to
+    // remove them when the coordinator is done.
     var children: [Coordinator] = []
 //    weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
 
