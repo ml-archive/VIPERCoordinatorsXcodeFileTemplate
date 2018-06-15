@@ -3,9 +3,9 @@
 BASE_XCODE_DIR="${HOME}/Library/Developer/Xcode"
 TEMPLATES_XCODE_DIR="${BASE_XCODE_DIR}/Templates"
 FILE_TEMPLATES_XCODE_DIR="${TEMPLATES_XCODE_DIR}/File Templates"
-TEMPLATES_FOLDER_NAME="Clean Coordinators"
+TEMPLATES_FOLDER_NAME="VIPER Coordinators"
 
-echo "Starting installation of Clean Coordinators templates."
+echo "Starting installation of VIPER Coordinators templates."
 
 # Check if templates dir exists
 if [ ! -d "${TEMPLATES_XCODE_DIR}" ]; then
@@ -28,4 +28,4 @@ fi
 # Copy the files
 echo "Copying template files."
 cp -r "${TEMPLATES_FOLDER_NAME}" "${FILE_TEMPLATES_XCODE_DIR}/"
-echo "Clean Coordinators templates installation done."
+echo "VIPER Coordinators templates installation done."

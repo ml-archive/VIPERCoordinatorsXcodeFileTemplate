@@ -1,8 +1,8 @@
-# ![](https://raw.githubusercontent.com/nodes-ios/CleanCoordinatorsXcodeFileTemplate/master/Clean%20Coordinators/Scene.xctemplate/TemplateIcon.png) Clean Coordinators Xcode File Template
+# ![](https://raw.githubusercontent.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/master/VIPER%20Coordinators/Scene.xctemplate/TemplateIcon.png) VIPER Coordinators Xcode File Template
 
-An Xcode file template that generates multiple files with boilerplate code required for setting up a scene using Clean Architecture and Coordinators.
+An Xcode file template that generates multiple files with boilerplate code required for setting up a scene using VIPER and Coordinators.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nodes-ios/CleanCoordinatorsXcodeFileTemplate/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/blob/master/LICENSE)
 
 ## 📦 Installation
 
@@ -18,7 +18,7 @@ chmod 755 install.sh && ./install.sh
 
 1. Open your Xcode project
 2. Create a new file (`Cmd + N`)
-3. Notice Clean Coordinators in the left pane
+3. Notice VIPER Coordinators in the left pane
 
 ## Known Issues
 
@@ -56,4 +56,4 @@ Replace field: `$1?\.`
 Made with ❤️ at [Nodes](http://nodesagency.com).
 
 ## 📄 License
-**Clean Coordinators Xcode File Template** is available under the MIT license. See the [LICENSE](https://github.com/nodes-ios/CleanCoordinatorsXcodeFileTemplate/blob/master/LICENSE) file for more info.
+**VIPER Coordinators Xcode File Template** is available under the MIT license. See the [LICENSE](https://github.com/nodes-ios/VIPERCoordinatorsXcodeFileTemplate/blob/master/LICENSE) file for more info.
