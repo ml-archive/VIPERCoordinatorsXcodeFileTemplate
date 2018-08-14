@@ -52,6 +52,10 @@ Replace field: `weak var coordinator: $1CoordinatorInput?`
 Search field: `([\n]+[\s]*coordinator)\.(?!start)`  
 Replace field: `$1?\.`
 
+## 💥 How we use!
+
+Check it out [HERE](./HOWWEUSE.md) to see how we use this awesome pattern!
+
 ## 👥 Credits
 Made with ❤️ at [Nodes](http://nodesagency.com).
 
