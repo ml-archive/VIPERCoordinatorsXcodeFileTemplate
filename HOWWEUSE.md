@@ -65,13 +65,24 @@ Eg.: The interactor makes a API call and receives the json file. The data will b
 ## Protocols
 
 In order to notify the objects through the app, we use protocols.
-Be careful when defining your protocols to avoid retain cycles. Make your protocols conform to `class` protocol to its declaration and use `weak` reference when declaring your variables.
+Be careful when defining your protocols to avoid retain cycles. Make your protocols conform to `class` protocol to its declaration and use `weak` reference when declaring your variables. Keep in mind that not all delegates should be declared as `weak`, you may need some reference to that protocols during the view lifecycle and those objects should not be deallocated. 
 
 Eg.: 
 
 ```
 protocol MyCoordinatorInput: class { }
 weak var coordinator: MyCoordinatorInput?
+
+
+Example of strong references: 
+
+	ViewController >> PresenterInput
+	PresenterInput >> InteractorInput
+
+Example of weak references:
+
+	Presenter >> CoordinatorInput
+	Coordinator >> ViewController
 ```
 
 ## Testing
