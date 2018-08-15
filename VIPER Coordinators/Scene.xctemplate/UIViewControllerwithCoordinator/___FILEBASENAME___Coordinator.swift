@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 
 class ___VARIABLE_sceneName___Coordinator: Coordinator {
+    // MARK: - Properties
     let navigationController: UINavigationController
     // NOTE: This array is used to retain child coordinators. Don't forget to
     // remove them when the coordinator is done.
     var children: [Coordinator] = []
 //    weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
 
+    // MARK: - Init
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -32,7 +34,7 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
         // navigationController.setViewControllers([vc], animated: false)
     }
 }
-
+// MARK: - Navigation Callbacks
 // PRESENTER -> COORDINATOR
 extension ___VARIABLE_sceneName___Coordinator: ___VARIABLE_sceneName___CoordinatorInput {
 
