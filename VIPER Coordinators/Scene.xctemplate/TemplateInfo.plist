@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new scene using clean architecture and coordinators. It consists of the view controller, interactor, presenter, and coordinator.</string>
+	<string>This generates a new scene using clean architecture and coordinators. It consists of the view controller, interactor, presenter and optionally a coordinator.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -123,6 +123,18 @@
 			<array>
 				<string>UIViewController</string>
 			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Description</key>
+			<string>Wheter to create a Coordinator for this scene</string>
+			<key>Identifier</key>
+			<string>withCoordinator</string>
+			<key>Name</key>
+			<string>Also create a Coordinator</string>
+			<key>Type</key>
+			<string>checkbox</string>
 		</dict>
 	</array>
 	<key>Platforms</key>
