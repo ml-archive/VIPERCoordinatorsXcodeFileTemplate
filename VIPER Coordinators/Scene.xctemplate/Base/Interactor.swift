@@ -9,7 +9,13 @@
 import Foundation
 
 class ___VARIABLE_sceneName___Interactor {
+    // MARK: - Properties
     weak var output: ___VARIABLE_sceneName___InteractorOutput?
+
+    // MARK: - Init
+    init() {
+
+    }
 }
 
 // MARK: - Business Logic -
