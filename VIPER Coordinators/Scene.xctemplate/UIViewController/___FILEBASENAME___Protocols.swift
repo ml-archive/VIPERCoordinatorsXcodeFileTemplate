@@ -26,6 +26,7 @@ protocol ___VARIABLE_sceneName___InteractorOutput: class {
 // VIEW -> PRESENTER
 protocol ___VARIABLE_sceneName___PresenterInput {
     func viewCreated()
+    func handle(_ action: ___VARIABLE_sceneName___.Action)
 }
 
 // PRESENTER -> VIEW

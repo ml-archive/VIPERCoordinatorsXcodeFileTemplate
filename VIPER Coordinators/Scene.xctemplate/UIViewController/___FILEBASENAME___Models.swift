@@ -12,6 +12,14 @@ enum ___VARIABLE_sceneName___ {
     enum Request { }
     enum Response { }
     enum DisplayData { }
+
+    enum Action {
+
+    }
+
+    enum Route {
+
+    }
 }
 
 extension ___VARIABLE_sceneName___.Request {
