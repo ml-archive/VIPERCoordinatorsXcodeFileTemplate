@@ -9,17 +9,6 @@
 import Foundation
 import UIKit
 
-// ======== Coordinator ======== //
-
-//protocol ___VARIABLE_sceneName___CoordinatorDelegate: class {
-//    func coordinator(_ coordinator: Coordinator, finishedWithSuccess success: Bool)
-//}
-
-// PRESENTER -> COORDINATOR
-protocol ___VARIABLE_sceneName___CoordinatorInput: class {
-
-}
-
 // ======== Interactor ======== //
 
 // PRESENTER -> INTERACTOR
