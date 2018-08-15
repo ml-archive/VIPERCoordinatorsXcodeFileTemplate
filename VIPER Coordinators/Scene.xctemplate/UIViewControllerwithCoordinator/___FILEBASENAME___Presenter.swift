@@ -25,6 +25,10 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterIn
     func viewCreated() {
 
     }
+
+    func handle(_ action: ___VARIABLE_sceneName___.Action) {
+        
+    }
 }
 
 // MARK: - Presentation Logic -

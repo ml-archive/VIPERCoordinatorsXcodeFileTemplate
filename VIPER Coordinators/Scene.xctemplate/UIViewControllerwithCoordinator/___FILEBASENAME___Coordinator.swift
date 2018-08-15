@@ -35,5 +35,7 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
 
 // PRESENTER -> COORDINATOR
 extension ___VARIABLE_sceneName___Coordinator: ___VARIABLE_sceneName___CoordinatorInput {
-
+    func navigate(to route: ___VARIABLE_sceneName___.Route) {
+        
+    }
 }
