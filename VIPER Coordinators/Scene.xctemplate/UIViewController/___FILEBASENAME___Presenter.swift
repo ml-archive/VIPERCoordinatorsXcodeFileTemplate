@@ -9,12 +9,14 @@
 import Foundation
 
 class ___VARIABLE_sceneName___Presenter {
+    // MARK: - Properties
     let interactor: ___VARIABLE_sceneName___InteractorInput
     weak var output: ___VARIABLE_sceneName___PresenterOutput?
     
     // Your custom coordinator
     // weak var coordinator: ___VARIABLE_sceneName___CoordinatorInput?
 
+    // MARK: - Init
     init(interactor: ___VARIABLE_sceneName___InteractorInput/*,
          coordinator: ___VARIABLE_sceneName___CoordinatorInput*/) {
         self.interactor = interactor

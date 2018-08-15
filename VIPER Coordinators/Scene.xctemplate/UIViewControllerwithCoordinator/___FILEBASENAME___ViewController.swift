@@ -9,9 +9,12 @@
 import UIKit
 
 class ___VARIABLE_sceneName___ViewController: UIViewController {
+    // MARK: - Outlets
 
+    // MARK: - Properties
     private var presenter: ___VARIABLE_sceneName___PresenterInput!
 
+    // MARK: - Init
     class func instantiate(with presenter: ___VARIABLE_sceneName___PresenterInput) -> ___VARIABLE_sceneName___ViewController {
         let name = "\(___VARIABLE_sceneName___ViewController.self)"
         let storyboard = UIStoryboard(name: name, bundle: nil)
