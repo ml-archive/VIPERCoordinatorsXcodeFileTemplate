@@ -14,6 +14,9 @@ An Xcode file template that generates multiple files with boilerplate code requi
 chmod 755 install.sh && ./install.sh
 ~~~
 
+#### To remove old templates
+Go to /Library/Developer/Xcode/Templates/File Templates and delete the ones you don't need anymore.
+
 ## Usage
 
 1. Open your Xcode project
