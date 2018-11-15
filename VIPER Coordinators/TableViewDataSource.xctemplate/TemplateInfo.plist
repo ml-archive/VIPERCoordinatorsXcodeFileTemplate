@@ -15,7 +15,7 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>Coordinator</string>
+	<string>TableViewDataSource</string>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.swift</string>
 </dict>
