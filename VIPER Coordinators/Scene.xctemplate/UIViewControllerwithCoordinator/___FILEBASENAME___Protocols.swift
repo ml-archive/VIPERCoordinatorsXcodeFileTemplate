@@ -20,18 +20,6 @@ protocol ___VARIABLE_sceneName___CoordinatorInput: class {
     func navigate(to route: ___VARIABLE_sceneName___.Route)
 }
 
-// ======== Interactor ======== //
-
-// PRESENTER -> INTERACTOR
-protocol ___VARIABLE_sceneName___InteractorInput {
-    // func perform(_ request: ___VARIABLE_sceneName___.Request.Work)
-}
-
-// INTERACTOR -> PRESENTER (indirect)
-protocol ___VARIABLE_sceneName___InteractorOutput: class {
-    // func present(_ response: ___VARIABLE_sceneName___.Response.Work)
-}
-
 // ======== Presenter ======== //
 
 // VIEW -> PRESENTER

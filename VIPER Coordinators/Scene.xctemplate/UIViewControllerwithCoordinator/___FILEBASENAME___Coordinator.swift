@@ -15,7 +15,7 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
     // NOTE: This array is used to retain child coordinators. Don't forget to
     // remove them when the coordinator is done.
     var children: [Coordinator] = []
-//    weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
+    // weak var delegate: ___VARIABLE_sceneName___CoordinatorDelegate?
 
     // MARK: - Init
     init(navigationController: UINavigationController) {
@@ -23,11 +23,9 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
     }
 
     func start() {
-        let interactor = ___VARIABLE_sceneName___Interactor()
-        let presenter = ___VARIABLE_sceneName___Presenter(interactor: interactor, coordinator: self)
+        let presenter = ___VARIABLE_sceneName___Presenter(coordinator: self)
         let vc = ___VARIABLE_sceneName___ViewController.instantiate(with: presenter)
 
-        interactor.output = presenter
         presenter.output = vc
 
         // FIXME: Display as you need

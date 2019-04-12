@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new scene using clean architecture and coordinators. It consists of the view controller, interactor, presenter and optionally a coordinator.</string>
+	<string>This generates a new scene using clean architecture and coordinators. It consists of the view controller, presenter and optionally a coordinator.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -41,20 +41,6 @@
 			<string>viewControllerName</string>
 			<key>Name</key>
 			<string>View Controller Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Interactor</string>
-			<key>Description</key>
-			<string>The interactor name</string>
-			<key>Identifier</key>
-			<string>interactorName</string>
-			<key>Name</key>
-			<string>Interactor Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
