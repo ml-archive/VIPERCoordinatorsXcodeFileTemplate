@@ -10,18 +10,18 @@ import Foundation
 
 class ___VARIABLE_sceneName___Presenter {
     // MARK: - Properties
-    let interactor: ___VARIABLE_sceneName___InteractorInput
     weak var coordinator: ___VARIABLE_sceneName___CoordinatorInput?
     weak var output: ___VARIABLE_sceneName___PresenterOutput?
 
     // MARK: - Init
-    init(interactor: ___VARIABLE_sceneName___InteractorInput, coordinator: ___VARIABLE_sceneName___CoordinatorInput) {
-        self.interactor = interactor
+    init(coordinator: ___VARIABLE_sceneName___CoordinatorInput) {
         self.coordinator = coordinator
     }
 }
 
 // MARK: - User Events -
+// -----------------------------------------------
+// View input will be handled below.
 
 extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput {
     func viewCreated() {
@@ -34,8 +34,5 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterIn
 }
 
 // MARK: - Presentation Logic -
-
-// INTERACTOR -> PRESENTER (indirect)
-extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InteractorOutput {
-
-}
+// -----------------------------------------------
+// Interactor output implementation will go below.

@@ -9,8 +9,6 @@
 import Foundation
 
 enum ___VARIABLE_sceneName___ {
-    enum Request { }
-    enum Response { }
     enum DisplayData { }
 
     enum Action {
@@ -20,14 +18,6 @@ enum ___VARIABLE_sceneName___ {
     enum Route {
 
     }
-}
-
-extension ___VARIABLE_sceneName___.Request {
-
-}
-
-extension ___VARIABLE_sceneName___.Response {
-
 }
 
 extension ___VARIABLE_sceneName___.DisplayData {
