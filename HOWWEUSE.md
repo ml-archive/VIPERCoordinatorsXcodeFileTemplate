@@ -15,7 +15,7 @@ The project consists in a 5 layer architecture.
 - Interactor:
 	- Where all the business logic goes specific by each use case.
 - Presenter:
-	- It's a bridge between the Interactor and the View Controller. 
+	- It's a bridge between the Interactor(s) and the View Controller. 
 	- Its responsibility is to prepare the data for display.
 - ViewController:
 	- Displays the content and handles the UI events to the presenter.
@@ -38,14 +38,17 @@ Eg.: Profile create, profile edit and profile display.
 
 --
 
-**Interactor** holds the business logic of a specific scene. It has the connection with the Models to manipulate the data. It should be totaly independent from the UI.
+**Interactor** holds the business logic for a specific data model. It has the connection with the Models to manipulate the data and it should be totaly independent from the UI.
 
 One of it's responsibilities is to make the API call's and parse the received data to the models.
+When building Interactors we create one Interactor per data model. For example each application that has an User object will have a single UserInteractor. 
 All the data is provided trough the input's and output's.
 
 --
 
 **Presenter** is responsible to handle the view interactions and drive the UI. It receives all the user actions on the UI and drives the app to the correct path. It's also their responsibility to make the calls for the other layers in order to get the data or to navigate to another flow. It also has its accessors defined by the input and output protocols.
+
+One Presenter can have multiple Interactors.
 
 --
 
