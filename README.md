@@ -57,7 +57,7 @@ Replace field: `$1?\.`
 
 ## 💥 How we use!
 
-Check it out [HERE](./HOWWEUSE.md) to see how we use this awesome pattern!
+Check it out [HERE](https://github.com/nodes-ios/Playbook/blob/master/ViperArchitecture.md) to see how we use this awesome pattern!
 
 ## 👥 Credits
 Made with ❤️ at [Nodes](http://nodesagency.com).
