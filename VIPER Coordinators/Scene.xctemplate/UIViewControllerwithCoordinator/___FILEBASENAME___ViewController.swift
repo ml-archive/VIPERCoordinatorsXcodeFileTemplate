@@ -18,9 +18,13 @@ class ___VARIABLE_sceneName___ViewController: UIViewController {
     class func instantiate(with presenter: ___VARIABLE_sceneName___PresenterInput) -> ___VARIABLE_sceneName___ViewController {
         let name = "\(___VARIABLE_sceneName___ViewController.self)"
         let storyboard = UIStoryboard(name: name, bundle: nil)
-        // swiftlint:disable:next force_cast
-        let vc = storyboard.instantiateViewController(withIdentifier: name) as! ___VARIABLE_sceneName___ViewController
+        
+        guard let vc = storyboard.instantiateViewController(withIdentifier: name) as? ___VARIABLE_sceneName___ViewController else {
+            preconditionFailure("Unable to instantiate a ___VARIABLE_sceneName___ViewController with the name \(name)")
+        }
+
         vc.presenter = presenter
+        
         return vc
     }
 
