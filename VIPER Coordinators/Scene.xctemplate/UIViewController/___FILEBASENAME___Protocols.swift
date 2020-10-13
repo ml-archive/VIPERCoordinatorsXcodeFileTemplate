@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+// ======== Coordinator ======== //
+
+// PRESENTER -> COORDINATOR
+protocol ___VARIABLE_sceneName___CoordinatorInput: class {
+    func navigate(to route: ___VARIABLE_sceneName___.Route)
+}
+
 // ======== Presenter ======== //
 
 // VIEW -> PRESENTER
