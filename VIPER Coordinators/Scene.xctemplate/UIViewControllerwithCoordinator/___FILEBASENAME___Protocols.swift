@@ -11,12 +11,12 @@ import UIKit
 
 // ======== Coordinator ======== //
 
-//protocol ___VARIABLE_sceneName___CoordinatorDelegate: class {
+//protocol ___VARIABLE_sceneName___CoordinatorDelegate: AnyObject {
 //    func coordinator(_ coordinator: Coordinator, finishedWithSuccess success: Bool)
 //}
 
 // PRESENTER -> COORDINATOR
-protocol ___VARIABLE_sceneName___CoordinatorInput: class {
+protocol ___VARIABLE_sceneName___CoordinatorInput: AnyObject {
     func navigate(to route: ___VARIABLE_sceneName___.Route)
 }
 
@@ -29,6 +29,6 @@ protocol ___VARIABLE_sceneName___PresenterInput {
 }
 
 // PRESENTER -> VIEW
-protocol ___VARIABLE_sceneName___PresenterOutput: class {
+protocol ___VARIABLE_sceneName___PresenterOutput: AnyObject {
     // func display(_ displayModel: ___VARIABLE_sceneName___.DisplayData.Work)
 }

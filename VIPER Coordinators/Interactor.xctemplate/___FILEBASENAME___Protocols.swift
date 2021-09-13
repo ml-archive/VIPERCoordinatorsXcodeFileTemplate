@@ -14,6 +14,6 @@ protocol ___VARIABLE_sceneName___InteractorInput {
 }
 
 // INTERACTOR -> PRESENTER (indirect)
-protocol ___VARIABLE_sceneName___InteractorOutput: class {
+protocol ___VARIABLE_sceneName___InteractorOutput: AnyObject {
     // func present(_ response: ___VARIABLE_sceneName___.Response.Work)
 }

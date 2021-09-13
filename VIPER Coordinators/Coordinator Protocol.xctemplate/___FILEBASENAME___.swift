@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___: class {
+protocol ___FILEBASENAMEASIDENTIFIER___: AnyObject {
     var children: [Coordinator] { get set }
     func start()
 }
